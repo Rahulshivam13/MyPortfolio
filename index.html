@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Shivam | Full Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0A1128] text-white font-sans selection:bg-gold selection:text-navy">
+
+    <nav class="nav-blur fixed w-full z-50 border-b border-[#D4AF37]/20 py-4 px-8 flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-tighter text-gold">RS</h1>
+        
+        <div class="space-x-8 hidden lg:flex font-medium text-xs tracking-[0.2em]">
+            <a href="#hero" class="hover-gold transition">HOME</a>
+            <a href="#experience" class="hover-gold transition">EXPERIENCE</a>
+            <a href="#projects" class="hover-gold transition">PROJECTS</a>
+            <a href="#certificates" class="hover-gold transition">CERTIFICATIONS</a>
+        </div>
+
+        <div class="flex items-center gap-5">
+            <div class="hidden sm:flex gap-4 border-r border-gold/20 pr-5">
+                <a href="https://www.linkedin.com/in/rahulshivam13" target="_blank" class="text-gold hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                <a href="http://www.rahulshivam.github" target="_blank" class="text-gold hover:text-white transition"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/Rahulsshivam/" target="_blank" title="LeetCode" class="text-gold hover:text-white transition"><i class="fas fa-code"></i></a>
+                <a href="https://www.hackerrank.com/profile/rahulshivam13" target="_blank" title="HackerRank" class="text-gold hover:text-white transition"><i class="fab fa-hackerrank"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1DQPNO10YBUTA78M72E3jJqRBbCW3fVM4/view?usp=drive_link" download class="bg-gold text-[#0A1128] px-5 py-2 rounded-sm font-bold text-xs hover:bg-white transition flex items-center gap-2">
+                <i class="fas fa-download"></i> CV
+            </a>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4">
+        <div class="animate-fade-in">
+            <span class="text-gold tracking-[0.5em] text-xs font-bold uppercase mb-4 block">Based in Bangalore, India</span>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tight">Rahul <span class="text-gold">Shivam</span></h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-10">
+                Full Stack Developer specializing in <span class="text-white font-semibold italic">Spring Boot & Java Ecosystem</span>. 
+                Transforming complex logic into elegant software solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="#projects" class="bg-gold text-[#0A1128] px-10 py-4 font-bold rounded-sm hover:tracking-widest transition-all">VIEW WORK</a>
+                <a href="#contact" class="border border-white/20 px-10 py-4 font-bold rounded-sm hover:bg-white hover:text-[#0A1128] transition-all">GET IN TOUCH</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="text-xs font-bold text-gold tracking-[0.3em] uppercase mb-12 border-l-4 border-gold pl-4">Work Experience</h2>
+        <div id="experience-container" class="grid gap-6"></div>
+    </section>
+
+    <section id="projects" class="py-24 bg-black/30 px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs font-bold text-gold tracking-[0.3em] uppercase mb-12 border-l-4 border-gold pl-4">Selected Works</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container"></div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-8 max-w-6xl mx-auto">
+        <h2 class="text-xs font-bold text-gold tracking-[0.3em] uppercase mb-12 border-l-4 border-gold pl-4">Technical Stack</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4" id="skills-container"></div>
+    </section>
+
+    <section id="certificates" class="py-24 bg-black/10 px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-xs font-bold text-gold tracking-[0.3em] uppercase mb-12 border-l-4 border-gold pl-4">Certifications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="certs-container"></div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 px-8 text-center border-t border-gold/10">
+        <h2 class="text-4xl font-bold mb-8">Ready to start to join <span class="text-gold italic">Organization?</span></h2>
+        <div class="flex flex-wrap justify-center gap-8 mb-16">
+            <a href="mailto:rahulshivam@gmail.com" class="text-xl hover:text-gold transition">rahulshivam@gmail.com</a>
+            <span class="text-gold hidden md:block">|</span>
+            <a href="tel:+918340596540" class="text-xl hover:text-gold transition">+91 8340596540</a>
+        </div>
+        <p class="text-gray-600 text-xs tracking-widest uppercase">&copy; 2025 Rahul Shivam &bull;</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
